@@ -3,6 +3,7 @@ import Experience from "./components/Experience";
 import naayachannel from "./assets/naayachannel-logo.png";
 import naayatrade from "./assets/naayatrade-logo.png";
 import Project from "./components/Project.jsx";
+import calc2paylogo from "./assets/calc2paylogo.png";
 import mivlogo from "./assets/mivlogo.png";
 import sharepdfslogo from "./assets/sharepdfslogo.png";
 import Education from "./components/Education.jsx";
@@ -10,31 +11,34 @@ import sidcolglogo from "./assets/sidcolglogo.jpeg";
 
 const Experiences = [
   {
-    img: naayachannel,
-    company: "Naayachannel",
-    position: "Front-End Developer",
-    duration: "May 2024 - Current (5 Months)",
-    responsibilities: [
-      "Designed, developed & hosted fully responsive company's website within a month",
-      "Implemented interactive user interfaces using React.js, improving user engagement by 30%.",
-      "Built 3 dynamic forms using Front-End JavaScript libraries, eliminating 2+ weeks of backend setup and development time",
-      "Designed & developed fully responsive property e-commerce platforms for client",
-    ],
-  },
-  {
     img: naayatrade,
     company: "Naayatrade",
     position: "Front-End Developer & UX Designer",
     duration: "March 2024 - Current (7 Months)",
     responsibilities: [
-      "Delivered 10+ responsive website pages within a week, meeting tight deadlines without compromising quality.",
-      "Developed an internal AI tool that significantly streamlined sales team operations, reducing workload by 50%.",
-      "Architected and implemented critical user flows for a complex B2B marketplace application, combining technical expertise with a deep understanding of user needs.",
+      `Built and scaled a fully responsive B2B marketplace platform, featuring buyer/seller dashboards, real-time order
+management, secure payment workflows, and subscription flows — delivering a seamless end-to-end commerce
+experience.`,
+`Developed an internal AI tool that streamlined sales operations, reducing manual workload by 50%, while also
+integrating dynamic storefronts, product management, and inventory control into the seller dashboard.`,
+`Translated high-fidelity Figma designs into pixel-perfect, responsive landing pages for B2B SaaS platforms, IT
+service provider, and pest control agency — delivering visually polished, fast-loading interfaces that matched brand
+guidelines across all devices.`,
+`Led API integration and data workflows, enabling seamless payment processing, streamlined order checkout,
+real-time status updates, and robust seller onboarding — while resolving 100+ bugs and enforcing strict data
+validation for reliability.`
     ],
   },
 ];
 
 const Projects = [
+  {
+    image: calc2paylogo,
+    name: "Calc2Pay",
+    desc: "calculator that generates UPI payment QR codes of the total calculated amount",
+    deploymentLink: "https://calc2pay.vercel.app/",
+    stack: ["React"],
+  },
   {
     image: mivlogo,
     name: "Made in Vikhroli",
@@ -93,7 +97,7 @@ function App() {
   }, []);
 
   return (
-    <div className="w-fit p-4 lg:w-[600px] font-helvetica mx-auto my-4 font-semibold flex flex-col gap-4 text-4">
+    <div className="w-fit p-4 lg:w-[600px] font-helvetica mx-auto my-4 flex flex-col gap-4 text-4">
       <div
         ref={cardRef}
         className="aspect-video bg-gradient-to-br from-slate-800 via-zinc-500 to-slate-700 rounded-[16px] p-4 flex flex-row justify-between items-end transition-transform duration-200 ease-out hover:shadow-xl"
@@ -103,7 +107,7 @@ function App() {
       >
         <div className="w-full flex flex-row justify-between items-center">
           <div className="flex flex-col">
-            <div className="text-[24px] font-helvetica-bold">
+            <div className="text-[24px] font-helvetica-bold font-semibold">
               Pratham Patankar
             </div>
             <div className="text-gray-800">Frontend Developer</div>
@@ -132,7 +136,7 @@ function App() {
               </svg>
             </a>
             <a
-              href="https://drive.google.com/file/d/1Mc0og5QAncEjKl65zR-KpD7bUsq0x7jX/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1OcDOGuzqCVeKVVc7gQ1Fl7iyZKhI6DKS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-800 hover:text-gray-900 transition-colors duration-200"
