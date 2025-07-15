@@ -14,7 +14,8 @@ const Experiences = [
     img: naayatrade,
     company: "Naayatrade",
     position: "Front-End Developer & UX Designer",
-    duration: "March 2024 - Current (7 Months)",
+    startedIn: "12/03/2024",
+    workingHere: true,
     responsibilities: [
       `Built and scaled a fully responsive B2B marketplace platform, featuring buyer/seller dashboards, real-time order
 management, secure payment workflows, and subscription flows — delivering a seamless end-to-end commerce
@@ -33,25 +34,46 @@ validation for reliability.`
 
 const Projects = [
   {
-    image: calc2paylogo,
     name: "Calc2Pay",
-    desc: "calculator that generates UPI payment QR codes of the total calculated amount",
-    deploymentLink: "https://calc2pay.vercel.app/",
+    desc: "Calculator that generates UPI payment QR codes of the total calculated amount.",
+    deploymentLink: "https://calc2pay.vercel.app",
     stack: ["React"],
   },
   {
-    image: mivlogo,
     name: "Made in Vikhroli",
     desc: "Digital e-commerce store for digital products with UPI payment integration.",
     deploymentLink: "https://madeinvikhroli.vercel.app",
     stack: ["Mongo DB", "Express", "React"],
   },
   {
-    image: sharepdfslogo,
     name: "SharePDFs",
-    desc: "Web app for sending documents to print shops via whatsapp, optimized for speed and privacy.",
+    desc: "Web app for sending documents to print shops via WhatsApp, optimized for speed and privacy.",
     deploymentLink: "https://sharepdfs.vercel.app",
     stack: ["React"],
+  },
+  {
+    name: "Samson's Music Academy",
+    desc: "Music academy website with courses, FAQ, and responsive dropdowns.",
+    deploymentLink: "https://samsonsmusicacademy.vercel.app",
+    stack: ["React"],
+  },
+  {
+    name: "A-Min-Ago",
+    desc: "Captures the last 1 minute of video leading up to when the user clicks the record button.",
+    deploymentLink: "https://aminago.vercel.app",
+    stack: ["React"],
+  },
+  {
+    name: "MIV Backend",
+    desc: "Backend services for Made in Vikhroli.",
+    deploymentLink: "https://miv-backend.vercel.app",
+    stack: ["Express", "Mongo DB"],
+  },
+  {
+    name: "Description Generator",
+    desc: "Gemini wrapper to generate descriptions with standard formatting.",
+    deploymentLink: "https://descriptiongenerator.vercel.app",
+    stack: ["React", "Gemini API"],
   },
 ];
 
@@ -66,6 +88,7 @@ const Educations = [
 
 function App() {
   const [skew, setSkew] = useState({ x: 0, y: 0 });
+  const [projectsInView, setProjectsInView] = useState(3);
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -191,9 +214,11 @@ function App() {
       <div className="flex flex-col gap-2 text-white font-helvetica">
         <div className="text-[24px] px-4">Projects</div>
         <div className="flex flex-col gap-2">
-          {Projects.map((project, index) => {
+          {Projects.slice(0, projectsInView).map((project, index) => {
             return <Project key={index} project={project} />;
           })}
+          {projectsInView <= 3 && <div onClick={() => setProjectsInView(Projects.length)} className="w-full text-center cursor-pointer">See More</div>}
+          {projectsInView > 3 && <div onClick={() => setProjectsInView(3)} className="w-full text-center cursor-pointer">See Less</div>}
         </div>
       </div>
 

@@ -4,7 +4,7 @@ const Education = ({ education }) => {
   return (
     <div className="w-full flex flex-row gap-3 p-4 bg-gray-800 bg-opacity-50 backdrop-blur-[10px] rounded-[15px]">
       <img
-        className="w-[80px] h-fit aspect-square object-cover rounded-[8px] grayscale"
+        className="w-[80px] h-fit aspect-square object-cover rounded-[8px]"
         src={education.image}
         alt=""
       />
