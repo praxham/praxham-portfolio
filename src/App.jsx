@@ -1,11 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import Experience from "./components/Experience";
-import naayachannel from "./assets/naayachannel-logo.png";
 import naayatrade from "./assets/naayatrade-logo.png";
 import Project from "./components/Project.jsx";
-import calc2paylogo from "./assets/calc2paylogo.png";
-import mivlogo from "./assets/mivlogo.png";
-import sharepdfslogo from "./assets/sharepdfslogo.png";
 import Education from "./components/Education.jsx";
 import sidcolglogo from "./assets/sidcolglogo.jpeg";
 
@@ -20,30 +16,36 @@ const Experiences = [
       `Built and scaled a fully responsive B2B marketplace platform, featuring buyer/seller dashboards, real-time order
 management, secure payment workflows, and subscription flows — delivering a seamless end-to-end commerce
 experience.`,
-`Developed an internal AI tool that streamlined sales operations, reducing manual workload by 50%, while also
+      `Developed an internal AI tool that streamlined sales operations, reducing manual workload by 50%, while also
 integrating dynamic storefronts, product management, and inventory control into the seller dashboard.`,
-`Translated high-fidelity Figma designs into pixel-perfect, responsive landing pages for B2B SaaS platforms, IT
+      `Translated high-fidelity Figma designs into pixel-perfect, responsive landing pages for B2B SaaS platforms, IT
 service provider, and pest control agency — delivering visually polished, fast-loading interfaces that matched brand
 guidelines across all devices.`,
-`Led API integration and data workflows, enabling seamless payment processing, streamlined order checkout,
+      `Led API integration and data workflows, enabling seamless payment processing, streamlined order checkout,
 real-time status updates, and robust seller onboarding — while resolving 100+ bugs and enforcing strict data
-validation for reliability.`
+validation for reliability.`,
     ],
   },
 ];
 
 const Projects = [
   {
-    name: "Calc2Pay",
-    desc: "Calculator that generates UPI payment QR codes of the total calculated amount.",
-    deploymentLink: "https://calc2pay.vercel.app",
-    stack: ["React"],
+    name: "Base Address from Pincode API",
+    desc: `Generates base address from any indian pincode, eg: from 400083, generates "Kannamwar Nagar, Mumbai-400083, Maharashtra, India"`,
+    deploymentLink: "https://pincode-base-address.vercel.app/",
+    stack: ["Hono.js"],
   },
   {
     name: "Made in Vikhroli",
     desc: "Digital e-commerce store for digital products with UPI payment integration.",
     deploymentLink: "https://madeinvikhroli.vercel.app",
-    stack: ["Mongo DB", "Express", "React"],
+    stack: ["Next.js", "Supabase"],
+  },
+  {
+    name: "Calc2Pay",
+    desc: "Calculator that generates UPI payment QR codes of the total calculated amount.",
+    deploymentLink: "https://calc2pay.vercel.app",
+    stack: ["React"],
   },
   {
     name: "SharePDFs",
@@ -206,7 +208,6 @@ function App() {
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
               </svg>
             </a>
-            
           </div>
         </div>
       </div>
@@ -217,8 +218,22 @@ function App() {
           {Projects.slice(0, projectsInView).map((project, index) => {
             return <Project key={index} project={project} />;
           })}
-          {projectsInView <= 3 && <div onClick={() => setProjectsInView(Projects.length)} className="w-full text-center cursor-pointer">See More</div>}
-          {projectsInView > 3 && <div onClick={() => setProjectsInView(3)} className="w-full text-center cursor-pointer">See Less</div>}
+          {projectsInView <= 3 && (
+            <div
+              onClick={() => setProjectsInView(Projects.length)}
+              className="w-full text-center cursor-pointer"
+            >
+              See More
+            </div>
+          )}
+          {projectsInView > 3 && (
+            <div
+              onClick={() => setProjectsInView(3)}
+              className="w-full text-center cursor-pointer"
+            >
+              See Less
+            </div>
+          )}
         </div>
       </div>
 
