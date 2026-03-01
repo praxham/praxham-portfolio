@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "bun --watch index.ts",
-    "build": ""
+    "build": "echo 'static site, no build needed'"
   },
   "peerDependencies": {
     "typescript": "^5"
