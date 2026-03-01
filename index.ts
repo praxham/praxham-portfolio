@@ -1,8 +1,6 @@
-import { getTotalStars } from "./github.server";
-import home from "./index.html";
+import home from "./public/index.html";
 
-const totalStars = await getTotalStars();
-
+// SPA, actual routing handled in router.js
 Bun.serve({
   routes: {
     "/": home,
@@ -11,16 +9,5 @@ Bun.serve({
     "/education": home,
     "/content": home,
     "/papers": home,
-    "/api/github/stars-count": Response.json(totalStars),
-    "/api/resume/get-resume": new Response(
-      Bun.file("./files/resume/PrathamPatankarResume.pdf"),
-      {
-        headers: {
-          "Content-Disposition":
-            'attachment; filename="PrathamPatankarResume.pdf"',
-          "Content-Type": "application/pdf",
-        },
-      },
-    ),
   },
 });

@@ -1,6 +1,9 @@
-import { updateItemInDocument, currentMonthYear, html } from "./common.js";
-import { navItemsArray, roles, colors, pages } from "./data.js";
-import { getTotalStarsClient } from "./github.js";
+import {
+  updateItemInDocument,
+  currentMonthYear,
+  html,
+} from "./common.js";
+import { navItemsArray, roles, colors, pages, stars } from "./data.js";
 import { handleRoute, handleLocation } from "./router.js";
 
 window.route = handleRoute;
@@ -52,7 +55,6 @@ const shortDescString = html`
 `;
 updateItemInDocument(".short-desc", shortDescString);
 
-const stars = await getTotalStarsClient("praxham");
 const starsString = html`
   <img src="https://cdn.simpleicons.org/github" width="14" height="14" />
   <svg width="14" height="14" viewBox="0 0 16 16" fill="#e3b341">
