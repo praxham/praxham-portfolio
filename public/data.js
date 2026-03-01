@@ -181,7 +181,7 @@ export const experience = [
 
 export const education = [
   {
-    name: "Master of Science in I.T. from @anna-leela (MU)",
+    name: 'Master of Science in I.T. from <a href="https://alsj.bunts.edu.in/" class="mention">@anna-leela</a> (MU)',
     descriptionPoints: [
       "Did final year research paper on Implementation of ML based single mic sound localization",
       "Had the opportunity to learn about advanced programming concepts, ML-AI Theory and Implenetation",
@@ -194,7 +194,7 @@ export const education = [
     cgpi: 7.21,
   },
   {
-    name: "Bachelor of Science in I.T. from @siddharth (MU)",
+    name: 'Bachelor of Science in I.T. from <a href="https://siddharthcollege.edu.in/" class="mention">@siddharth</a> (MU)',
     descriptionPoints: [
       "Did final year project on using hardware-website combination to detect and visualize EMF, using inductor as mic connected to male headphone jack",
       "Had the opportunity to learn from amazing professors not just curriculum but also industry standards and new tech",

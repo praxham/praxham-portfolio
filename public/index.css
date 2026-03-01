@@ -216,6 +216,7 @@ iframe[src*="reddit.com/"]:not([src]) {
 }
 
 .tech-stack {
+  width: fit-content;
   display: flex;
   flex-direction: row;
   gap: 4px;
@@ -228,6 +229,7 @@ iframe[src*="reddit.com/"]:not([src]) {
   padding: 2px 8px;
   border: 1px solid var(--blackSecondary-color);
   border-radius: 10px;
+  white-space: nowrap;
 }
 
 .description-points {
@@ -248,4 +250,54 @@ iframe[src*="reddit.com/"]:not([src]) {
 .mention:hover,
 .mention:active {
   color: var(--primary-color) !important;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.project-date-wrapper {
+  text-align: right;
+}
+
+.techstack-n-location-or-cgpi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-or-cgpi {
+  text-align: right;
+}
+
+.location-or-cgpi p {
+  font-size: 14px;
+  color: var(--blackTertiary-color) !important;
+}
+
+@media (max-width: 850px) {
+  .navbar,
+  .hero,
+  .pages-tabs,
+  .page-content {
+    padding: 16px 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-right-side {
+    order: -1;
+  }
+
+  .pages-tabs,
+  .tech-stack {
+    flex-wrap: wrap;
+  }
 }
