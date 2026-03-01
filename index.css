@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+html {
+  background: #e9ecff;
+  background: linear-gradient(
+    0deg,
+    rgba(233, 236, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+body {
+  background-color: white;
+  max-width: 850px !important;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid var(--borderColor-color);
+  border-right: 1px solid var(--borderColor-color);
+  display: flex;
+  flex-direction: column;
+  color: var(--black-color) !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  cursor: pointer;
+  outline: none;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+  color: var(--primary-color) !important;
+}
+
+h3 {
+  font-size: 16px;
+  color: var(--blackTertiary-color) !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 36px;
+  border-bottom: 1px solid var(--borderColor-color);
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-items-group {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.hero {
+  /* padding-top: 24px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 16px 36px;
+  border-bottom: 1px solid var(--borderColor-color);
+}
+
+.hero-left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roles {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400 !important;
+}
+
+.short-desc {
+  color: var(--blackTertiary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.short-desc p {
+  color: inherit;
+  font-size: inherit;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  filter: grayscale(100%);
+}
+
+.stars {
+  width: fit-content;
+  background-color: var(--black-color);
+  padding: 8px 8px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.stars img {
+  filter: invert();
+}
+.stars span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pages-container {
+  /* padding: 16 36; */
+  border-bottom: 1px solid var(--borderColor-color);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-name-n-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-name-n-links h3 {
+  color: var(--black-color) !important;
+}
+
+iframe[src*="reddit.com/"] {
+  width: 100% !important;
+  filter: grayscale(100%) !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.pages-tabs a.active {
+  color: var(--primary-color) !important;
+}
+
+.pages-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px 36px;
+  border-bottom: 1px solid var(--borderColor-color);
+}
+.page-content {
+  padding: 16px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.tech {
+  color: var(--blackSecondary-color) !important;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border: 1px solid var(--blackSecondary-color);
+  border-radius: 10px;
+}
+
+.description-points {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px !important;
+  color: var(--blackTertiary-color) !important;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid var(--borderColor-color);
+}
+
+.mention,
+.mention:visited,
+.mention:hover,
+.mention:active {
+  color: var(--primary-color) !important;
+}
