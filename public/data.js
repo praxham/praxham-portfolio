@@ -6,6 +6,8 @@ export const colors = {
   borderColor: "#e6e6e6",
 };
 
+export const stars = 3;
+
 export const navItemsArray = [
   {
     name: "Mail",
@@ -13,7 +15,7 @@ export const navItemsArray = [
   },
   {
     name: "Resume",
-    path: "/api/resume/get-resume",
+    path: "https://drive.google.com/file/d/1QVZuqXBXGtE7aAE68jm0izPvSYPvUzrx/view?usp=drive_link",
   },
 ];
 

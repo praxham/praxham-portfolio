@@ -1,28 +1,3 @@
 {
-  "cleanUrls": true,
-  "headers": [
-    {
-      "source": "/files/resume/PrathamPatankarResume.pdf",
-      "headers": [
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename="PrathamPatankarResume.pdf""
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        }
-      ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/resume/get-resume",
-      "destination": "/files/resume/PrathamPatankarResume.pdf"
-    },
-    {
-      "source": "/((?!api|assets|files|.*\..*).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
