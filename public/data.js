@@ -11,7 +11,7 @@ export const stars = 3;
 export const navItemsArray = [
   {
     name: "Mail",
-    path: "mailto:prathampatankar1234@gmail.com?subject=Frontend%20Developer%20Portfolio%20Inquiry&body=Hello%2C%0A%0AI%20am%20interested%20in%20your%20frontend%20developer%20portfolio.%20Could%20we%20discuss%20further%3F%0A%0ARegards%2C%0A[Your%20Name]",
+    path: "mailto:prathampatankar1234@gmail.com?subject=Inquiry%20Regarding%20Software%20Development%20Work&body=Hi%20i%20came%20across%20your%20website%20i%20am%20interested%20to%20talk%20to%20you%20about%20",
   },
   {
     name: "Resume",
@@ -55,7 +55,7 @@ export const projects = [
     ],
     repo_url: "https://github.com/madeinvikhroli/madeinvikhroli",
     deployed_url: "https://madeinvikhroli.vercel.app",
-    techStack: ["Next", "Supabase"],
+    techStack: ["React", "Express", "Postgres"],
     status: "wip",
   },
   {
@@ -91,16 +91,15 @@ export const projects = [
       'document links are perfectly labelled and indexed in formatted text message and sent to the printer shop, user just have to say "oh print all of the documents/ print first and fourth one"',
     ],
     repo_url: "https://github.com/praxham/ShareDocs",
-    deployed_url: "https://praxham.github.io/ShareDocs/",
+    deployed_url: "https://sharepdfs.vercel.app/",
     techStack: ["React", "Tailwind"],
     status: "live",
   },
   {
     name: "Lightbar",
     descriptionPoints: [
-      "Developed a software-based lighting utility using Shell scripting that renders a customizable lightbar on the bottom of the screen",
-      "Created a cost-effective alternative to expensive hardware monitor lamps, providing necessary keyboard illumination in dark environments",
-      "Implemented high customizability options, allowing users to adjust the lightbar to their specific screen and ambient lighting needs",
+      "Made digital lightbar which appears on screen on top of all apps to illuminate keyboard at night",
+      "I wanted lightbar to illuminate keyboard but they cost so much for simply being light source attached to a monitor",
     ],
     repo_url: "https://github.com/praxham/lightbar",
     deployed_url: null,
@@ -110,9 +109,8 @@ export const projects = [
   {
     name: "A Min Ago",
     descriptionPoints: [
-      "Engineered a video buffering tool that continuously holds the most recent 60 seconds of video memory and saves it upon user activation",
-      "Designed specifically for capturing unpredictable, fleeting events—such as lightning strikes—that users would otherwise miss with manual recording",
-      "Built an intuitive web interface to ensure quick, seamless capture without draining device storage through continuous standard recording",
+      "As the name suggests a min ago records the video of past one minute, it does so by constantly recording minute long clips and trashing them, if user clicks record, it saves the last clip of a minute",
+      "Useful for capturing unexpected events like lightning or accidents",
     ],
     repo_url: "https://github.com/praxham/a-min-ago",
     deployed_url: "https://aminago.vercel.app",
@@ -122,9 +120,10 @@ export const projects = [
   {
     name: "WebTV",
     descriptionPoints: [
-      "Designed a unified, Apple tvOS-inspired user interface to aggregate diverse streaming sources and media into a single web dashboard",
-      "Integrated free online TV channels, streaming and music providers alongside personal media libraries hosted on Google Drive and Plex",
-      "Earned organic open-source recognition (2 GitHub stars) and implemented customization features allowing users to add custom website links for expanded viewing options",
+      "WebTV is Apple tvOS inspired TV interface made for web",
+      "It has links to free TV channel providers, OTT providers, and music providers from the start, users can add their own sources via Google Drive, Plex or any other custom URL",
+      "Using another third party script/extension you can open desktop apps and TV version of YouTube from this web interface too (more details in readme.md)",
+      "Made this because wanted to use pc monitor as tv (since monitors are relatively has higher image quality than traditional TVs), easily navigable with smart TV remote",
     ],
     repo_url: "https://github.com/praxham/WebTV",
     deployed_url: "https://praxham.github.io/WebTV/",
@@ -134,9 +133,9 @@ export const projects = [
   {
     name: "Finding Electromagntic Field",
     descriptionPoints: [
-      "Developed a companion web application that interfaces directly with a low-cost, simple inductor-based hardware sensor to detect electromagnetic fields",
-      "Built real-time visualization tools to graph and display the signal data captured by the physical EMF sensor",
-      "Designed architecture for a v2 update integrating a machine learning model to analyze the hardware signals and accurately identify the direction of the electromagnetic field",
+      "An EMF Detector website works with inductor mic to identify intensity and direction using ML model of the EMF Field",
+      "Inductor Mic is inductor connected to male headphone jack, it detects changing magnetic fields (EMF) and converts them to audio signal",
+      "Made this to spread awareness about EMF, to show we are all surrounded by it and it's safe",
     ],
     repo_url: "https://github.com/praxham/findingelectromagnticfield",
     deployed_url: "https://praxham.github.io/findingelectromagnticfield/",
@@ -148,14 +147,12 @@ export const experience = [
   {
     name: "Full Stack Developer <a href='https://quvor.com/' class='mention'>@quvor</a>",
     descriptionPoints: [
-      "Built end-to-end features for a community platform using Remix/React Router v7, including notifications, universal search, wishlist, cart, and v3 redesigns of product, group, course, event, and blog modules with dynamic filtering and pagination.",
-      "Implemented server-side data logic using React Router loaders and actions, aggregating and transforming data across multiple Directus collections to derive user-specific states powering dynamic CTAs, access controls, and membership workflows across modules.",
-      "Conducted comprehensive design and functionality audits across multiple platform modules, coordinating with UX and backend teams to document issues via Userback, define test cases, and systematically resolve UI bugs across cart, wishlist, newsfeed, and product sections — ensuring production-ready quality across the platform.",
-      "Improved codebase maintainability by refactoring high-complexity pages, extracting reusable components, enforcing theme and routing conventions via custom ESLint rules, and leading schema migration updates across the entire codebase in collaboration with UX and backend teams.",
+      "Built end-to-end key features for a community platform using React Router v7 and Mantine UI, Implemented server-side data logic using React Router loaders and actions, aggregating and transforming data across multiple Directus collections to power the UI.",
+      "Audited design and functionality across multiple platform modules, worked with QA, UX and backend teams to document and fix pre-existing UI bugs",
+      "Improved codebase maintainability by refactoring high-complexity pages, extracting reusable components, simplifying the code logic, improving readability of code",
     ],
-    techStack: ["React Router (Framework)", "Mantine UI"],
+    techStack: ["React Router v7", "Mantine UI"],
     startingMonthAndYear: "September 2025",
-    endingMonthAndYear: "",
     location: "Remote",
     currentlyWorkingHere: true,
   },
@@ -184,7 +181,7 @@ export const experience = [
 
 export const education = [
   {
-    name: "Master of Science in I.T. from @anna-leela (MU)",
+    name: 'Master of Science in I.T. from <a href="https://alsj.bunts.edu.in/" class="mention">@anna-leela</a> (MU)',
     descriptionPoints: [
       "Did final year research paper on Implementation of ML based single mic sound localization",
       "Had the opportunity to learn about advanced programming concepts, ML-AI Theory and Implenetation",
@@ -197,7 +194,7 @@ export const education = [
     cgpi: 7.21,
   },
   {
-    name: "Bachelor of Science in I.T. from @siddharth (MU)",
+    name: 'Bachelor of Science in I.T. from <a href="https://siddharthcollege.edu.in/" class="mention">@siddharth</a> (MU)',
     descriptionPoints: [
       "Did final year project on using hardware-website combination to detect and visualize EMF, using inductor as mic connected to male headphone jack",
       "Had the opportunity to learn from amazing professors not just curriculum but also industry standards and new tech",

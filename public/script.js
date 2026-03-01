@@ -2,6 +2,7 @@ import {
   updateItemInDocument,
   currentMonthYear,
   html,
+  processExternalLinks,
 } from "./common.js";
 import { navItemsArray, roles, colors, pages, stars } from "./data.js";
 import { handleRoute, handleLocation } from "./router.js";
@@ -77,3 +78,4 @@ const pagesString = pages
 updateItemInDocument(".pages-tabs", pagesString);
 
 handleLocation();
+processExternalLinks();
