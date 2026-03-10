@@ -15,7 +15,7 @@ export const navItemsArray = [
   },
   {
     name: "Resume",
-    path: "https://drive.google.com/file/d/1QVZuqXBXGtE7aAE68jm0izPvSYPvUzrx/view?usp=drive_link",
+    path: "https://drive.google.com/file/d/1ttsshzIRs-DxVR22L8R6N3hEdho8d5vs/view?usp=sharing",
   },
 ];
 
