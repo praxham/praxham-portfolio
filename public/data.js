@@ -15,7 +15,7 @@ export const navItemsArray = [
   },
   {
     name: "Resume",
-    path: "https://drive.google.com/file/d/1ttsshzIRs-DxVR22L8R6N3hEdho8d5vs/view?usp=sharing",
+    path: "https://drive.google.com/file/d/17zvWXFMbFo-ZmLvTESTRWwB3DXDvP8Nb/view?usp=sharing",
   },
 ];
 
@@ -144,6 +144,19 @@ export const projects = [
 ];
 
 export const experience = [
+  {
+    name: "Tech Lead – Software Engineer <a href='https://caterersnearme.in/' class='mention'>@caterersnearme</a>",
+    descriptionPoints: [
+      "Architected and delivered an end-to-end referral system — designed MongoDB schema, built NestJS services with DTOs and validation pipelines, and implemented atomic reward and coupon distribution logic at record creation",
+      "Built a custom order configuration feature for admins to set item-level custom pricing; prices are JWT-tokenized and embedded in shareable links, and tamper-proof end-to-end",
+      "Developed internal automation scripts including a bulk data ingestion tool that parsed Excel sheets and called internal APIs, a multi-page html form auto-fill script, and a database repair script to fix inconsistent data",
+    ],
+    techStack: ["Nest.js", "React Native", "MongoDB"],
+    startingMonthAndYear: "April 2026",
+    endingMonthAndYear: "May 2026",
+    location: "Mumbai, India",
+    currentlyWorkingHere: false,
+  },
   {
     name: "Full Stack Developer <a href='https://quvor.com/' class='mention'>@quvor</a>",
     descriptionPoints: [
