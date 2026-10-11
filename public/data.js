@@ -48,8 +48,8 @@ export const projects = [
   {
     name: "Made in Vikhroli",
     descriptionPoints: [
-      "Built a full-stack digital product marketplace with seller dashboards and product management, featuring a \textbf{zero-commission UPI payment system} that needs no payment gateway (Razorpay etc.) by generating dynamic per-product UPI links so sellers receive funds directly in their own UPI IDs",
-      "Designed a UTR-based payment verification workflow: buyers submit their UTR at checkout to create a pending order, sellers are emailed to confirm the payment, and digital products are \textbf{auto-delivered via email} on confirmation",
+      "Built a full-stack digital product marketplace with seller dashboards and product management, featuring a zero-commission UPI payment system that needs no payment gateway (Razorpay etc.) by generating dynamic per-product UPI links so sellers receive funds directly in their own UPI IDs",
+      "Designed a UTR-based payment verification workflow: buyers submit their UTR at checkout to create a pending order, sellers are emailed to confirm the payment, and digital products are auto-delivered via email on confirmation",
     ],
     repo_url: "https://github.com/madeinvikhroli/madeinvikhroli",
     deployed_url: "https://madeinvikhroli.com",
