@@ -26,8 +26,8 @@ updateItemInDocument(".roles", rolesString);
 
 const shortDescString = html`
   <p>
-    Hi Pratham here from Vikhroli, Mumbai. currently I am making
-    <a href="https://madeinvikhroli.vercel.app/" class="mention"
+    Hi Pratham here from Vikhroli, Mumbai. recently I made
+    <a href="https://madeinvikhroli.com" class="mention"
       >@madeinvikhroli</a
     >, which is a small art collective with custom peer-to-peer UPI payment
     solution, a while ago I made
@@ -37,13 +37,15 @@ const shortDescString = html`
   </p>
 
   <p>
-    I was working as Full Stack Developer
-    <a href="https://quvor.com/" class="mention">@quvor</a> from September 2025
-    - ${currentMonthYear} for almost half a year making their b2b community
-    builder platform's key modules and I also worked as Frontend Developer
-    <a href="https://naayatrade.com/" class="mention">@naayatrade</a> from March
-    2024 - July 2025 for a year and a half where I made complete UI of their b2b
-    marketplace platform
+  I most recently worked as Tech Lead at
+  <a href="https://caterersnearme.in" class="mention">@caterersnearme</a>
+  (April 2026 - May 2026), where I built their referral system and custom
+  order pricing. Before that, I was a Full Stack Developer
+    <a href="https://quvor.com/" class="mention">@quvor</a> (September 2025
+    - March 2026), building key modules of their b2b community platform, and I 
+    also worked as Frontend Developer
+    <a href="https://naayatrade.com/" class="mention">@naayatrade</a> (March 2024
+  - July 2025), where I made the complete UI and some APIs of their b2b marketplace.
   </p>
 
   <p>
