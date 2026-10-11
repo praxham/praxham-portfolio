@@ -48,15 +48,13 @@ export const projects = [
   {
     name: "Made in Vikhroli",
     descriptionPoints: [
-      "Making art collective platform where artists can upload digital artworks and users can easily purchase it, without account creation",
-      "Will be developing custom peer-to-peer UPI payment solution",
-      "Main goal of this is to make as simple but functional and beautiful looking website possible, which can be served from raspberry pi zero 2w",
-      "If possible will be working on trying to run this whole thing off of solar panels and small battery",
+      "Built a full-stack digital product marketplace with seller dashboards and product management, featuring a \textbf{zero-commission UPI payment system} that needs no payment gateway (Razorpay etc.) by generating dynamic per-product UPI links so sellers receive funds directly in their own UPI IDs",
+      "Designed a UTR-based payment verification workflow: buyers submit their UTR at checkout to create a pending order, sellers are emailed to confirm the payment, and digital products are \textbf{auto-delivered via email} on confirmation",
     ],
     repo_url: "https://github.com/madeinvikhroli/madeinvikhroli",
-    deployed_url: "https://madeinvikhroli.vercel.app",
-    techStack: ["React", "Express", "Postgres"],
-    status: "wip",
+    deployed_url: "https://madeinvikhroli.com",
+    techStack: ["Remix", "Express", "D1 SQLite", "R2 Object Storage"],
+    status: "live",
   },
   {
     name: "Calc 2 Pay",
