@@ -27,9 +27,8 @@ updateItemInDocument(".roles", rolesString);
 const shortDescString = html`
   <p>
     Hi Pratham here from Vikhroli, Mumbai. recently I made
-    <a href="https://madeinvikhroli.com" class="mention"
-      >@madeinvikhroli</a
-    >, which is a small art collective and digital marketplace with custom
+    <a href="https://madeinvikhroli.com" class="mention">@madeinvikhroli</a>,
+    which is a small art collective and digital marketplace with custom
     peer-to-peer UPI payment solution
     <a href="https://miv-pay.vercel.app/" class="mention">@miv-pay</a>, a while
     ago I made
@@ -39,15 +38,16 @@ const shortDescString = html`
   </p>
 
   <p>
-  I most recently worked as Tech Lead at
-  <a href="https://caterersnearme.in" class="mention">@caterersnearme</a>
-  (April 2026 - May 2026), where I built their referral system and custom
-  order pricing. Before that, I was a Full Stack Developer
-    <a href="https://quvor.com/" class="mention">@quvor</a> (September 2025
-    - March 2026), building key modules of their b2b community platform, and I 
+    I most recently worked as Tech Lead at
+    <a href="https://caterersnearme.in" class="mention">@caterersnearme</a>
+    (April 2026 - June 2026), where I built their referral system and custom
+    order pricing. Before that, I was a Full Stack Developer
+    <a href="https://quvor.com/" class="mention">@quvor</a> (September 2025 -
+    March 2026), building key modules of their b2b community platform, and I
     also worked as Frontend Developer
-    <a href="https://naayatrade.com/" class="mention">@naayatrade</a> (March 2024
-  - July 2025), where I made the complete UI and some APIs of their b2b marketplace.
+    <a href="https://naayatrade.com/" class="mention">@naayatrade</a> (March
+    2024 - July 2025), where I made the complete UI and some APIs of their b2b
+    marketplace.
   </p>
 
   <p>
