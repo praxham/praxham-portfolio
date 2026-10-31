@@ -29,8 +29,10 @@ const shortDescString = html`
     Hi Pratham here from Vikhroli, Mumbai. recently I made
     <a href="https://madeinvikhroli.com" class="mention"
       >@madeinvikhroli</a
-    >, which is a small art collective with custom peer-to-peer UPI payment
-    solution, a while ago I made
+    >, which is a small art collective and digital marketplace with custom
+    peer-to-peer UPI payment solution
+    <a href="https://miv-pay.vercel.app/" class="mention">@miv-pay</a>, a while
+    ago I made
     <a href="https://calc2pay.vercel.app/" class="mention">@calc-2-pay</a>,
     where users can calculate total amount and generate UPI QR with that amount
     so customer can scan and pay the prefilled amount in QR

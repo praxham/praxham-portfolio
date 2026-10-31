@@ -6,7 +6,7 @@ export const colors = {
   borderColor: "#e6e6e6",
 };
 
-export const stars = 3;
+export const stars = 9;
 
 export const navItemsArray = [
   {
@@ -48,12 +48,51 @@ export const projects = [
   {
     name: "Made in Vikhroli",
     descriptionPoints: [
-      "Built a full-stack digital product marketplace with seller dashboards and product management, featuring a zero-commission UPI payment system that needs no payment gateway (Razorpay etc.) by generating dynamic per-product UPI links so sellers receive funds directly in their own UPI IDs",
-      "Designed a UTR-based payment verification workflow: buyers submit their UTR at checkout to create a pending order, sellers are emailed to confirm the payment, and digital products are auto-delivered via email on confirmation",
+      "Made Digital Products E-commerce platform using Remix, Express and D1 db and R2 object storage",
+      `Created, integrated and open-sourced <a href="https://miv-pay.vercel.app/" class="mention">@miv-pay</a>: a from-scratch, peer-to-peer payment gateway like solution that generates cryptographically signed payment links. Instead of UPI deep links (which are blocked for unverified merchants), it renders a dynamic UPI QR with a "Share QR Code" option for mobile to share qr code image to upi app to trigger payment. Customers enter their UTR, which is passed back to the store via postMessage and sent to the owner on WhatsApp or email via customer only by single click for easy verification. Integrated into this project as its checkout`,
     ],
     repo_url: "https://github.com/madeinvikhroli/madeinvikhroli",
-    deployed_url: "https://madeinvikhroli.com",
-    techStack: ["Remix", "Express", "D1 SQLite", "R2 Object Storage"],
+    deployed_url: "https://madeinvikhroli.vercel.app",
+    techStack: ["Remix", "Express", "D1", "R2", "Zustand", "Zod"],
+    status: "wip",
+  },
+  {
+    name: "Miv Pay",
+    descriptionPoints: [
+      "A lightweight, open-source, peer-to-peer payment gateway like solution that generates and verifies cryptographically signed UPI payment links. It works around the restrictions that block standard UPI deep links for unverified merchants",
+      'When a link is opened, it renders a dynamic UPI QR code with the amount prefilled. On desktop the customer scans it, and on mobile a "Share QR Code" option sends the QR image straight to their UPI app, so merchants need no verification',
+      'Customers enter the 12-digit UTR after paying and tap a single "Confirm Payment" button. It passes the UTR back to the store\'s checkout tab via postMessage and opens WhatsApp or email with a prefilled message, so the owner can verify the payment in their bank app',
+      "Exposes simple generate-link and verify-link REST APIs, so any e-commerce site can plug it in as a custom payment gateway.",
+    ],
+    repo_url: "https://github.com/praxham/miv-pay",
+    deployed_url: "https://miv-pay.vercel.app",
+    techStack: ["Remix"],
+    status: "live",
+  },
+  {
+    name: "Samanarthi Search",
+    descriptionPoints: [
+      `Samanarthi means "similar word" in Marathi. It's a curated search engine that uses in-browser vector search to surface human-picked links for niche, under-represented or "unsearchable" topics that mainstream search and LLMs handle poorly.`,
+      `Traditional search matches keywords, and LLMs rely on what they were trained on, so neither can reliably find poorly documented answers buried under popular results. Take a query like "turn 15 inch laptop into 14 inch": search engines return display-settings videos, and LLMs often just say it's impossible. Samanarthi matches on meaning against links that humans have curated and moderated, so it finds the real solution. It isn't trying to replace search engines, only to fill the gaps where they fail.`,
+      `It also helps with topics where the words people search with differ from the words media and institutions use. For example, male survivors of sexual abuse by women are rarely described in those terms, and coverage tends to use phrases like "made to penetrate" or "sexually victimised by women". Semantic matching connects the plain-language query to those hidden results.`,
+      `Built with React and Tailwind, with Postgres (pgLite) and pgVector running fully in the browser, so there's no backend to host. Embeddings for new links are generated on my own machine once a month and shipped as pre-embedded data, so the database initializes in under a second and searches run in the browser.`,
+    ],
+    repo_url: "https://github.com/praxham/samanarthi-search",
+    deployed_url: "https://samanarthi-search.vercel.app/",
+    techStack: ["React", "Tailwind", "pgLite", "pgVector"],
+    status: "live",
+  },
+  {
+    name: "WebTV (v2)",
+    descriptionPoints: [
+      "A big-screen, couch-friendly launcher for HTPCs and living room PCs, inspired by Apple tvOS and modern streaming-box home screens. It runs as a fullscreen website, so it works anywhere a browser does",
+      "Navigable with a TV remote or gamepad using spatial navigation (Norigin). Apps launch by running shell commands configured in a single JSON file, and it can start Chromium in kiosk mode on a living room PC",
+      "Fully themeable: the UI is React and Tailwind CSS, so layouts, colors, fonts and animations can be restyled freely. It's open source with 9 GitHub stars, easy to set up (clone, `npm install`, `npm run start`) and runs on Linux or macOS",
+      "Built it to use a PC monitor as a TV, since monitors usually have better image quality than traditional TVs",
+    ],
+    repo_url: "https://github.com/praxham/WebTV",
+    deployed_url: "https://web-tvv.vercel.app/",
+    techStack: ["React", "Tailwind", "Zustand", "Bun"],
     status: "live",
   },
   {
@@ -63,6 +102,7 @@ export const projects = [
       `shopkeepers enter their UPI ID once, after that they just calculate the total amount and generate UPI QR code with that amount so customers can scan the QR
       they're shown payment option in their UPI app with total amount prefilled so they can pay easily, No account creation nothing, the UPI ID users entered is stored locally on user's device, no data ever leaves user's device`,
       "It reduces the hassle of calculating total on calculator saying the amount out loud to customer manually types it in and pays, sometimes due to miscommunication, the customer ends up paying the wrong amount",
+      `shopkeepers can also share the generated qr via whatsapp or any other app it is shared as payment link generated using <a href="https://miv-pay.vercel.app/" class="mention">@miv-pay</a>`,
     ],
     repo_url: "https://github.com/praxham/calc2pay",
     deployed_url: "https://calc2pay.vercel.app",
@@ -116,20 +156,6 @@ export const projects = [
     status: "live",
   },
   {
-  name: "WebTV",
-  descriptionPoints: [
-    "WebTV is an Fruit Company tvOS inspired living-room launcher built as a website, made for HTPCs and PCs used as TVs",
-    "Apps and sources are set up in a single JSON config file: add a name, icon, background and a command, and the launcher opens it. Free TV, OTT and music links are included from the start",
-    "A small local Bun server lets the interface launch desktop apps and a kiosk-mode browser, so it can open native apps and the TV version of YouTube (setup details in the README)",
-    "Built with spatial navigation so it works with a smart TV remote or gamepad, and fully themeable with Tailwind CSS",
-    "Made because I wanted to use a PC monitor as a TV (monitors usually have better image quality than traditional TVs) and navigate it from the couch",
-  ],
-  repo_url: "https://github.com/praxham/WebTV",
-  deployed_url: "https://web-tvv.vercel.app/",
-  techStack: ["React", "TypeScript", "Tailwind CSS", "Bun", "Zustand"],
-  status: "live",
-  },
-  {
     name: "Finding Electromagntic Field",
     descriptionPoints: [
       "An EMF Detector website works with inductor mic to identify intensity and direction using ML model of the EMF Field",
@@ -144,17 +170,17 @@ export const projects = [
 
 export const experience = [
   {
-    name: "Tech Lead – Software Engineer <a href='https://caterersnearme.in/' class='mention'>@caterersnearme</a>",
+    name: "Tech Lead <a href='https://quvor.com/' class='mention'>@caterersnearme</a>",
     descriptionPoints: [
-      "Architected and delivered an end-to-end referral system — designed MongoDB schema, built NestJS services with DTOs and validation pipelines, and implemented atomic reward and coupon distribution logic at record creation",
-      "Built a custom order configuration feature for admins to set item-level custom pricing; prices are JWT-tokenized and embedded in shareable links, and tamper-proof end-to-end",
-      "Developed internal automation scripts including a bulk data ingestion tool that parsed Excel sheets and called internal APIs, a multi-page html form auto-fill script, and a database repair script to fix inconsistent data",
+      "Architected and delivered an end-to-end referral system: designed the MongoDB schema, built NestJS services with DTOs and validation pipelines, and implemented atomic reward and coupon distribution at record creation",
+      "Built ad lead-generation forms that let ad audiences experience the website's functionality within seconds. Simplified the features, removed unnecessary form fields, and derived richer, more granular user data from the minimal input users provide",
+      "Built a custom order configuration feature that lets admins set entity-level custom pricing, JWT-tokenized and embedded in shareable links for tamper-proof, end-to-end pricing integrity",
+      "Developed internal automation scripts: a bulk Excel-to-API data ingestion tool, a multi-page HTML form auto-fill script, and a database repair script that fixes inconsistent records at scale",
     ],
-    techStack: ["Nest.js", "React Native", "MongoDB"],
+    techStack: ["Next.js", "React Native", "Nest.js", "Mongo DB"],
     startingMonthAndYear: "April 2026",
-    endingMonthAndYear: "May 2026",
+    endingMonthAndYear: "June 2026",
     location: "Mumbai, India",
-    currentlyWorkingHere: false,
   },
   {
     name: "Full Stack Developer <a href='https://quvor.com/' class='mention'>@quvor</a>",
@@ -165,8 +191,8 @@ export const experience = [
     ],
     techStack: ["React Router v7", "Mantine UI"],
     startingMonthAndYear: "September 2025",
+    endingMonthAndYear: "March 2026",
     location: "Remote",
-    currentlyWorkingHere: true,
   },
   {
     name: "Frontend Developer <a href='https://naayatrade.com/' class='mention'>@naayatrade</a>",
