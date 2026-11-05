@@ -10,7 +10,8 @@ import {
 export const handleRoute = (event) => {
   event = event || window.event;
   event?.preventDefault();
-  window.history.pushState({}, "", event?.currentTarget.href);
+  const path = event?.currentTarget.getAttribute("href") || "/";
+  window.location.hash = path;
   handleLocation();
 };
 
@@ -24,7 +25,7 @@ const routeComponentsMap = {
 };
 
 export const handleLocation = async () => {
-  const path = window.location.pathname;
+  let path = window.location.hash.replace("#", "") || "/";
   const component = routeComponentsMap[path] || routeComponentsMap[404];
   updateItemInDocument(".page-content", component);
 
@@ -45,7 +46,7 @@ export const handleLocation = async () => {
   const tabs = document.querySelectorAll(".pages-tabs a");
   tabs.forEach((tab) => {
     const tabPath = tab.getAttribute("href");
-    if (tabPath === path) {
+    if (tabPath === path || tabPath === `#${path}`) {
       tab.classList.add("active");
     } else {
       tab.classList.remove("active");
