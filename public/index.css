@@ -279,6 +279,45 @@ iframe[src*="reddit.com/"]:not([src]) {
   color: var(--blackTertiary-color) !important;
 }
 
+.devto-embed-bq {
+  border: solid 1px #00000033;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 316px;
+}
+
+.devto-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.devto-title-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.devto-title-username {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.devto-banner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 10px;
+  overflow-y: hidden;
+  filter: grayscale();
+}
+
 @media (max-width: 850px) {
   .navbar,
   .hero,

@@ -66,7 +66,7 @@ export const projects = [
     ],
     repo_url: "https://github.com/praxham/miv-pay",
     deployed_url: "https://miv-pay.vercel.app",
-    techStack: ["Remix"],
+    techStack: ["Remix", "Zustand", "Zod"],
     status: "live",
   },
   {
@@ -249,18 +249,43 @@ export const redditUserUrl = "https://www.reddit.com/user/praxham/";
 
 export const content = [
   {
-    url: "https://www.reddit.com/r/developersIndia/comments/1qnkupm/i_made_a_simple_screenwide_lightbar_overlay_for/",
-    subredditUrl: "https://www.reddit.com/r/developersIndia/",
-    postTitle: "I made a simple screenwide lightbar overlay for",
+    url: "https://dev.to/praxham/ive-made-upi-deep-link-replacement-for-individual-use-33h",
+    bannerImageUrl:
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fk9j8zavfqeqvsoh0yhwi.png",
+    postTitle: "Ive made upi deep link replacement for individual use",
     userName: "praxham",
-    subredditName: "developersIndia",
+    medium: "dev.to",
   },
   {
-    url: "https://www.reddit.com/r/developersIndia/comments/1nbrq7c/made_api_which_generates_base_address_from_any/",
-    subredditUrl: "https://www.reddit.com/r/developersIndia/",
+    url: "https://dev.to/praxham/i-made-search-engine-to-search-unsearchable-topics-2g4a",
+    bannerImageUrl:
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fgu5yebu2axtb3aucj7pw.png",
+    postTitle: "I made search engine to search unsearchable topics",
+    userName: "praxham",
+    medium: "dev.to",
+  },
+  {
+    url: "https://dev.to/praxham/webtv-a-living-room-launcher-for-your-htpc-built-as-a-website-1g6a",
+    bannerImageUrl:
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fjsd93sxqpkhu7h1pq7oz.png",
+    postTitle:
+      "WebTV: A living-room launcher for your HTPC, built as a website.",
+    userName: "praxham",
+    medium: "dev.to",
+  },
+  {
+    url: "https://dev.to/praxham/i-made-a-simple-screen-wide-lightbar-overlay-for-linux-3kp9",
+    bannerImageUrl:
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fnwbbrn46iy9d6ndsj7kc.png",
+    postTitle: "I made a simple screen-wide lightbar overlay for Linux",
+    userName: "praxham",
+    medium: "dev.to",
+  },
+  {
+    url: "https://dev.to/praxham/made-api-which-generates-base-address-from-any-indian-pincode-nb7",
     postTitle: "Made api which generates base address from any indian pincode",
     userName: "praxham",
-    subredditName: "developersIndia",
+    medium: "dev.to",
   },
   {
     url: "https://www.reddit.com/r/htpc/comments/18mn14o/webtv_a_googletv_like_ui_on_web/",
@@ -268,6 +293,7 @@ export const content = [
     postTitle: "WebTV a GoogleTV like UI on Web",
     userName: "prathampatankar",
     subredditName: "htpc",
+    medium: "reddit",
   },
   {
     url: "https://www.reddit.com/r/SamsungDex/comments/18i6rr1/desktop_mode_on_budget_android_devices_but_theres/",
@@ -275,6 +301,7 @@ export const content = [
     postTitle: "Desktop Mode on Budget Android devices, but there's an issue..",
     userName: "prathampatankar",
     subredditName: "SamsungDex",
+    medium: "reddit",
   },
   {
     url: "https://www.reddit.com/r/SamsungDex/comments/18ir5uw/got_it_working_on_m13/",
@@ -282,10 +309,21 @@ export const content = [
     postTitle: "Got it working on M13",
     userName: "prathampatankar",
     subredditName: "SamsungDex",
+    medium: "reddit",
   },
 ];
 
 export const papers = [
+  {
+    name: "Serverless Peer to Peer Payment Gateway - 2026",
+    descriptionPoints: [
+      "Proposes a decentralized, serverless architecture that circumvents current UPI deep-link restrictions for unverified merchants through the generation of cryptographically signed payment URLs and dynamic QR payloads.",
+      "Introduces a secure cross-origin state synchronization mechanism utilizing the 'window.postMessage' API to securely route the 12-digit Unique Transaction Reference (UTR) from the isolated payment environment back to the merchant's primary e-commerce origin.",
+      "Implements an out-of-band transaction verification protocol by programmatically invoking native communication clients (via 'mailto:' and 'wa.me' URI schemes), facilitating a seamless human-in-the-loop notification system for final settlement validation.",
+    ],
+    techStack: ["upi deeplink", "window.postMessage", "mailto", "wa.me"],
+    deployed_url: "https://praxham.github.io/miv-pay/",
+  },
   {
     name: "Spread of Marathi Language on Internet - 2022",
     descriptionPoints: [
