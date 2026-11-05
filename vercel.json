@@ -1,4 +1,9 @@
 {
-  "outputDirectory": "public",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://portfolio.praxham.workers.dev/$1",
+      "permanent": true
+    }
+  ]
 }
