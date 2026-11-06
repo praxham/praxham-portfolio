@@ -262,6 +262,15 @@ export const redditUserUrl = "https://www.reddit.com/user/praxham/";
 
 export const content = [
   {
+    url: "https://dev.to/praxham/making-procedural-sky-based-on-realtime-weather-data-using-feturbulence-5984",
+    bannerImageUrl:
+      "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fsa9k3imijsps0922ge0c.png",
+    postTitle:
+      "making procedural sky based on realtime weather data using feTurbulence",
+    userName: "praxham",
+    medium: "dev.to",
+  },
+  {
     url: "https://dev.to/praxham/ive-made-upi-deep-link-replacement-for-individual-use-33h",
     bannerImageUrl:
       "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fk9j8zavfqeqvsoh0yhwi.png",
