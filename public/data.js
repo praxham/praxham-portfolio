@@ -84,6 +84,18 @@ export const projects = [
     status: "live",
   },
   {
+    name: "Procedural Sky",
+    descriptionPoints: [
+      "Engineered organic, procedural clouds using CSS box-shadows and SVG filters (feTurbulence) for a lightweight, WebGL-free rendering approach.",
+      "Integrated Open-Meteo and IP-based geolocation to dynamically sync cloud density with real-world weather without intrusive location permissions.",
+      "Implemented time-aware CSS gradients that automatically transition the sky's color palette based on the user's local time of day.",
+    ],
+    repo_url: "https://github.com/praxham/procedural-sky",
+    deployed_url: "https://procedural-sky.vercel.app/",
+    techStack: ["React", "Tailwind", "CSS"],
+    status: "live",
+  },
+  {
     name: "WebTV (v2)",
     descriptionPoints: [
       "A big-screen, couch-friendly launcher for HTPCs and living room PCs, inspired by Apple tvOS and modern streaming-box home screens. It runs as a fullscreen website, so it works anywhere a browser does",
