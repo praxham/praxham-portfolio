@@ -183,7 +183,7 @@ export const projects = [
 
 export const experience = [
   {
-    name: "Tech Lead <a href='https://quvor.com/' class='mention'>@caterersnearme</a>",
+    name: "Tech Lead <a href='https://caterersnearme.in/' class='mention'>@caterersnearme</a>",
     descriptionPoints: [
       "Architected and delivered an end-to-end referral system: designed the MongoDB schema, built NestJS services with DTOs and validation pipelines, and implemented atomic reward and coupon distribution at record creation",
       "Built ad lead-generation forms that let ad audiences experience the website's functionality within seconds. Simplified the features, removed unnecessary form fields, and derived richer, more granular user data from the minimal input users provide",
