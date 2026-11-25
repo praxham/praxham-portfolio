@@ -311,26 +311,27 @@ export const content = [
   },
   {
     url: "https://www.reddit.com/r/htpc/comments/18mn14o/webtv_a_googletv_like_ui_on_web/",
-    subredditUrl: "https://www.reddit.com/r/htpc/",
+    bannerImageUrl:
+      "https://preview.redd.it/webtv-a-googletv-like-ui-on-web-v0-qzo32junyd7c1.png?width=1080&crop=smart&auto=webp&s=19a2323f8d54460dd4fc3e82e7e46c54e489e1e8",
+
     postTitle: "WebTV a GoogleTV like UI on Web",
     userName: "prathampatankar",
-    subredditName: "htpc",
     medium: "reddit",
   },
   {
     url: "https://www.reddit.com/r/SamsungDex/comments/18i6rr1/desktop_mode_on_budget_android_devices_but_theres/",
-    subredditUrl: "https://www.reddit.com/r/SamsungDex/",
+    bannerImageUrl:
+      "https://preview.redd.it/desktop-mode-on-budget-android-devices-but-theres-an-issue-v0-omokwzg7x86c1.jpg?width=1080&crop=smart&auto=webp&s=8f49235f193b91ed95ece361286595bb6e9af363",
     postTitle: "Desktop Mode on Budget Android devices, but there's an issue..",
     userName: "prathampatankar",
-    subredditName: "SamsungDex",
     medium: "reddit",
   },
   {
     url: "https://www.reddit.com/r/SamsungDex/comments/18ir5uw/got_it_working_on_m13/",
-    subredditUrl: "https://www.reddit.com/r/SamsungDex/",
+    bannerImageUrl:
+      "https://preview.redd.it/got-it-working-on-m13-v0-22030ytusd6c1.jpg?width=1080&crop=smart&auto=webp&s=65a0b7d15ff73075f1ef3e7e83adf211ada5aa59",
     postTitle: "Got it working on M13",
     userName: "prathampatankar",
-    subredditName: "SamsungDex",
     medium: "reddit",
   },
 ];
